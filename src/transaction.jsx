@@ -22,10 +22,6 @@ export function SendTokens(){
             alert("Enter Address");
             return;
         }
-        if(!amount){
-            alert("Enter amount");
-            return;
-        }
 
         const transaction = new Transaction();
         transaction.add(
