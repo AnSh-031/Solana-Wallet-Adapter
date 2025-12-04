@@ -26,14 +26,15 @@ function App() {
   document.body.style.padding = "0";
 
   return (
-    <div style={{backgroundColor: "#151e1bff", height: "100vh", width: "100vw"}}>
+    <div style={{backgroundColor: "#0D0F1A", height: "100vh", width: "100vw"}}>
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={[]} autoConnect>
           <WalletModalProvider>
             <ShowSolBalance></ShowSolBalance>
             <div style={{ display: "flex", justifyContent: "center", paddingTop: "100px"}}>
-              <WalletMultiButton style={{marginRight: "50px",padding:"9px", backgroundColor: "#ffffffff",fontSize:"30px",color:"#28308cff",borderStyle:"solid",borderWidth:"4px"}}/>
-              <WalletDisconnectButton style={{marginleft: "50px",backgroundColor: "#ffffff", padding:"9px",fontSize:"30px",color:"#28308cff",borderStyle:"solid",borderWidth:"4px"}}/>
+              <WalletMultiButton style={{marginRight: "50px",padding:"9px", backgroundColor: "linear-gradient(135deg, #4F8BFF, #A273FF)",fontSize:"18px",color:"white",border:"none",borderRadius:"12px",fontWeight:"bold",
+              transition: "0.2s ease",boxShadow: "0 0 15px rgba(255, 79, 79, 0.4)"}}/>
+              <WalletDisconnectButton style={{marginleft: "50px",backgroundColor: "linear-gradient(135deg, #FF4F4F, #FF9374", padding:"9px",fontSize:"18px",color:"white",border:"none",borderRadius:"12px",fontWeight:"bold", transition: "0.2s ease",boxShadow: "0 0 15px rgba(255, 79, 79, 0.4)"}}/>
             </div>
             <RequestAirdrop></RequestAirdrop>
             <div style={{display:"flex", justifyContent:"center",padding:"0px"}}>
